@@ -1,0 +1,22 @@
+[
+  {
+    "qid": "Q1",
+    "query": "bm25 vs tf idf for ad hoc retrieval"
+  },
+  {
+    "qid": "Q2",
+    "query": "trec web track clueweb gov2 wt10g"
+  },
+  {
+    "qid": "Q3",
+    "query": "evaluation metrics precision recall map mrr"
+  },
+  {
+    "qid": "Q4",
+    "query": "pagerank link analysis search engine ranking"
+  },
+  {
+    "qid": "Q5",
+    "query": "bert transformers fine tuning for text classification"
+  }
+]

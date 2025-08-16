@@ -1,0 +1,77 @@
+[
+  {
+    "doc_id": 1,
+    "title": "Information Retrieval Doc 1",
+    "text": "TF–IDF and cosine similarity are foundational methods in the vector space model. They are used to compute the relevance of documents based on term frequency and inverse document frequency weighting. By representing documents and queries as vectors, cosine similarity allows ranking according to angle closeness. This approach remains widely taught in IR courses and is often a baseline for evaluating newer methods."
+  },
+  {
+    "doc_id": 2,
+    "title": "Information Retrieval Doc 2",
+    "text": "BM25, also called Okapi BM25, is a probabilistic retrieval function that refines TF–IDF scoring. It introduces parameters to normalize for document length and control term saturation, improving retrieval accuracy. BM25 remains highly effective and is used as a strong baseline in TREC ad hoc retrieval tasks. Many modern systems adopt BM25 as their first-stage retriever before neural re-ranking."
+  },
+  {
+    "doc_id": 3,
+    "title": "Information Retrieval Doc 3",
+    "text": "Indexing in IR relies on inverted index structures, which map terms to lists of documents where they appear. Postings lists may store term frequency and positions for efficient query evaluation. Compression techniques reduce space and speed up query processing. Large-scale systems like web search engines optimize index design for billions of documents."
+  },
+  {
+    "doc_id": 4,
+    "title": "Information Retrieval Doc 4",
+    "text": "Evaluation metrics such as precision, recall, MAP, MRR, and nDCG are essential for measuring IR effectiveness. TREC pioneered standardized test collections, where queries and relevance judgments enable system comparison. High precision means retrieving mostly relevant documents, while high recall means covering as many relevant ones as possible. MAP and MRR are especially useful when evaluating ranked retrieval output."
+  },
+  {
+    "doc_id": 5,
+    "title": "Information Retrieval Doc 5",
+    "text": "Query expansion and relevance feedback are classic techniques for improving retrieval performance. Users can mark relevant results, and the system adjusts the query vector to emphasize important terms. Pseudo relevance feedback assumes the top-ranked documents are relevant and expands automatically. RM3 is a well-known algorithm that balances original query terms with feedback expansion."
+  },
+  {
+    "doc_id": 7,
+    "title": "Web Search Doc 7",
+    "text": "Search engines rely on crawling, indexing, and ranking to serve billions of users daily. Crawlers discover and download pages, while indexers build data structures for fast retrieval. Ranking combines textual relevance with link analysis methods like PageRank. This pipeline has shaped the architecture of web search since the late 1990s."
+  },
+  {
+    "doc_id": 8,
+    "title": "Web Search Doc 8",
+    "text": "TREC Web Tracks introduced realistic challenges for IR research using collections like WT10g, GOV2, and ClueWeb09. These corpora include millions of noisy web pages. Ad hoc web search tasks required ranking pages relevant to queries, simulating a true web environment. GOV2 in particular became a standard large-scale dataset for terabyte-scale retrieval experiments."
+  },
+  {
+    "doc_id": 10,
+    "title": "Web Search Doc 10",
+    "text": "Click models study how users interact with ranked results. Metrics such as dwell time and position bias reveal which documents attract attention. These models help evaluate ranking quality beyond binary relevance judgments. Search logs are mined to refine ranking algorithms and improve user satisfaction."
+  },
+  {
+    "doc_id": 14,
+    "title": "NLP ML Doc 14",
+    "text": "Transformers such as BERT, RoBERTa, and GPT revolutionized NLP with self-attention mechanisms. Fine-tuning these models on IR datasets enables passage and document ranking with high accuracy. Unlike bag-of-words methods, transformers capture semantic similarity and context. They now dominate leaderboards for TREC Deep Learning tracks."
+  },
+  {
+    "doc_id": 16,
+    "title": "NLP ML Doc 16",
+    "text": "Deep learning methods like CNNs, RNNs, LSTMs, and GRUs paved the way for transformers. Before attention, recurrent models handled sequences in tasks like sentiment analysis and machine translation. Although surpassed by transformers, these architectures are still taught for their conceptual importance. They form the foundation of modern neural IR systems."
+  },
+  {
+    "doc_id": 19,
+    "title": "Programming Doc 19",
+    "text": "Programming languages such as Python, Java, and Rust are essential tools for software development. Each has unique strengths, with Python dominating in AI/ML and Java popular for enterprise systems. Rust is appreciated for memory safety and performance. Language choice often depends on project requirements and ecosystem support."
+  },
+  {
+    "doc_id": 22,
+    "title": "Programming Doc 22",
+    "text": "Containers and orchestration platforms like Docker and Kubernetes transformed software deployment. Developers package applications with dependencies, ensuring reproducibility across environments. Kubernetes automates scaling, networking, and monitoring for clusters of containers. This shift underpins modern cloud-native architecture."
+  },
+  {
+    "doc_id": 25,
+    "title": "Health Doc 25",
+    "text": "Electronic medical records (EMRs) store sensitive patient information. Ensuring privacy and compliance with HIPAA is critical for healthcare systems. Interoperability standards like HL7 and FHIR allow different systems to exchange medical data. Research explores how IR can help clinicians quickly find relevant records in large databases."
+  },
+  {
+    "doc_id": 29,
+    "title": "Health Doc 29",
+    "text": "COVID-19 accelerated vaccine research using mRNA technology. Clinical trials demonstrated high efficacy, leading to global rollout. IR systems helped researchers track the vast literature explosion during the pandemic. Lessons from COVID highlight the need for rapid access to biomedical knowledge in future health crises."
+  },
+  {
+    "doc_id": 34,
+    "title": "Misc Doc 34",
+    "text": "Climate change research emphasizes greenhouse gases, CO2 emissions, and mitigation strategies. IR tools help scientists discover relevant papers across environmental datasets. Policy makers rely on synthesized evidence when designing climate agreements. Long-term monitoring data supports accurate modeling of global warming trends."
+  }
+]
