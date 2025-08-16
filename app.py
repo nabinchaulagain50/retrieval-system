@@ -29,11 +29,11 @@ def mrr_score(ranked, rel_set):
     return 0.0
 
 def run_eval(model_name, k=10):
-    with open("data/corpus.json", "r", encoding="utf-8") as f:
+    with open("corpus.json", "r", encoding="utf-8") as f:
         docs = json.load(f)
-    with open("data/queries.json", "r", encoding="utf-8") as f:
+    with open("queries.json", "r", encoding="utf-8") as f:
         queries = json.load(f)
-    with open("data/qrels.json", "r", encoding="utf-8") as f:
+    with open("qrels.json", "r", encoding="utf-8") as f:
         qrels = json.load(f)
 
     index = CorpusIndex(docs)
@@ -101,4 +101,5 @@ if st.button("Run Evaluation"):
         "MRR": round(df["MRR"].mean(), 3),
         f"P@{k}": round(df[f"P@{k}"].mean(), 3),
         f"R@{k}": round(df[f"R@{k}"].mean(), 3),
+
     })
