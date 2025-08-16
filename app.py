@@ -61,7 +61,7 @@ st.title("IR Model: Search & Evaluation (BM25 vs VSM)")
 
 # Search section
 st.header("🔎 Search the Corpus")
-with open("data/corpus.json", "r", encoding="utf-8") as f:
+with open("corpus.json", "r", encoding="utf-8") as f:
     docs = json.load(f)
 index = CorpusIndex(docs)
 query_text = st.text_input("Enter your search query", "bm25 vs tf idf for ad hoc retrieval")
@@ -103,3 +103,4 @@ if st.button("Run Evaluation"):
         f"R@{k}": round(df[f"R@{k}"].mean(), 3),
 
     })
+
